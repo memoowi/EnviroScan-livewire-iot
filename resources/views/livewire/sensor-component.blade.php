@@ -1,6 +1,7 @@
 <div>
     <div class="app">
-        <h1>EnviroScan</h1>
+        <h1>EnviroScan</h1><br>
+        <p class="by">By Misbach</p>
     </div>
     <div class="container">
         <div class="card">

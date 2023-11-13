@@ -20,7 +20,9 @@ Route::get('/', function () {
 });
 
 Route::get('/enviro',SensorComponent::class);
+Route::get('/get-data', [SensorComponent::class, 'getData']);
 Route::get('/update/{temperatureValue}/{humidityValue}',[SensorComponent::class,'update']);
+Route::get('/create/{temperatureValue}/{humidityValue} ',[SensorComponent::class,'create']);
 
 Livewire::setUpdateRoute(function ($handle) {
     return Route::post('/EnviroScan/public/livewire/update', $handle);
